@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Digital India</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./assets/Logo.png" />
+  </head>
+  <body class="text-slate-700">
+    <div class="relative shadow-lg p-4 flex justify-between items-center">
+      <div>
+        <a href="./"><img src="./assets/Logo Full.png" class="max-w-32" /></a>
+      </div>
+      <div class="header-links select-none md:block hidden">
+        <a href="./">Home</a>
+        <a href="./#impact">Our Impact</a>
+        <a href="./#initiatives">Our Initiatives</a>
+        <a href="./about.html">About Us</a>
+      </div>
+      <div
+        id="header-links-mobile"
+        class="header-links-mobile select-none md:hidden hidden w-[50vw] h-screen left-0 top-0 bg-black text-white p-6 flex flex-col z-100 overflow-auto"
+      >
+        <a href="./"
+          ><img src="./assets/Logo Full.png" class="max-w-32 mb-6"
+        /></a>
+        <a href="./">Home</a>
+        <a href="./#impact">Our Impact</a>
+        <a href="./#initiatives">Our Initiatives</a>
+        <a href="./about.html">About Us</a>
+      </div>
+      <div
+        id="header-shadow-mobile"
+        class="md:hidden hidden left-1/2 top-0 bg-black/50 w-[50vw] h-screen z-100"
+      ></div>
+      <div id="header-toggle-mobile" class="md:hidden block">
+        <i class="fa-solid fa-bars text-4xl cursor-pointer"></i>
+      </div>
+    </div>
+
+    <div
+      class="bg-[./url(assets/India.webp)] bg-no-repeat bg-cover w-full h-screen min-h-180 mb-5"
+    >
+      <div
+        class="text-center position-absolute bg-black/50 w-full h-full flex flex-col justify-center items-center md:px-100 px-20"
+      >
+        <h2
+          id="pageTitle"
+          class="md:text-5xl text-3xl font-bold text-white mb-8"
+        ></h2>
+        <p class="text-slate-200 mb-10"></p>
+        <div>
+          <button
+            id="pageOfficialWebsite"
+            class="bg-white hover:bg-gray-200 text-slate-700 py-2 px-6 rounded-full cursor-pointer transition ml-4"
+            onclick="window.open('https://www.digitalindia.gov.in/')"
+          >
+            Official Website
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <section id="initiative" class="px-18 py-6">
+      <div class="flex justify-between">
+        <div class="w-[45vw]">
+          <h1
+            id="initTitle"
+            class="md:text-3xl text-xl font-bold mb-8 text-center"
+          ></h1>
+          <p id="initDescription"></p>
+        </div>
+        <div class="w-[35vw] mt-auto">
+          <img id="initSideImg" class="w-full h-auto ml-4" />
+        </div>
+      </div>
+    </section>
+
+    <script src="./data.js"></script>
+    <script src="./initiative.js"></script>
+  </body>
+</html>

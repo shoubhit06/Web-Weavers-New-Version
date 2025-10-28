@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Initiatives - Digital India</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./assets/Logo.png" />
+  </head>
+  <body class="text-slate-700">
+    <div class="relative shadow-lg p-4 flex justify-between items-center">
+      <div>
+        <a href="./"><img src="./assets/Logo Full.png" class="max-w-32" /></a>
+      </div>
+      <div class="header-links select-none md:block hidden">
+        <a href="./">Home</a>
+        <a href="./#impact">Our Impact</a>
+        <a href="./#initiatives">Our Initiatives</a>
+        <a href="./about.html">About Us</a>
+      </div>
+      <div
+        id="header-links-mobile"
+        class="header-links-mobile select-none md:hidden hidden w-[50vw] h-screen left-0 top-0 bg-black text-white p-6 flex flex-col z-100 overflow-auto"
+      >
+        <a href="./"
+          ><img src="/assets/Logo Full.png" class="max-w-32 mb-6"
+        /></a>
+        <a href="./">Home</a>
+        <a href="./#impact">Our Impact</a>
+        <a href="./#initiatives">Our Initiatives</a>
+        <a href="./about.html">About Us</a>
+      </div>
+      <div
+        id="header-shadow-mobile"
+        class="md:hidden hidden left-1/2 top-0 bg-black/50 w-[50vw] h-screen z-100"
+      ></div>
+      <div id="header-toggle-mobile" class="md:hidden block">
+        <i class="fa-solid fa-bars text-4xl cursor-pointer"></i>
+      </div>
+    </div>
+
+    <div
+      class="bg-[url(./assets/India.webp)] bg-no-repeat bg-cover w-full h-screen min-h-180 mb-5"
+    >
+      <div
+        class="text-center position-absolute bg-black/50 w-full h-full flex flex-col justify-center items-center md:px-100 px-20"
+      >
+        <h2 class="md:text-5xl text-3xl font-bold text-white mb-8">
+          Digital India
+          <span class="text-orange-600">Initiatives</span>
+        </h2>
+        <p class="text-slate-200 mb-10"></p>
+        <div>
+          <button
+            class="bg-blue-600 hover:bg-blue-800 text-white py-2 px-6 rounded-full cursor-pointer transition mb-14"
+            onclick="location.href = '#initiatives'"
+          >
+            Explore
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <section id="initiatives"></section>
+
+    <script src="./data.js"></script>
+    <script src="./initiatives.js"></script>
+  </body>
+</html>

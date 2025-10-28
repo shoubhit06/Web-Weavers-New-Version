@@ -1,0 +1,44 @@
+@theme {
+  --color-ditext: #6a89a7;
+}
+
+@layer {
+  .header-links a {
+    position: relative;
+    margin-left: 1rem;
+    text-decoration: none;
+    padding-bottom: 2px;
+  }
+
+  .header-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: dodgerblue;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+
+  .header-links a:hover::after {
+    transform: scaleX(1);
+  }
+
+  .header-links-mobile a {
+    position: relative;
+    margin-bottom: 2.5rem;
+  }
+
+  .header-links-mobile a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1.25rem;
+    width: 100%;
+    height: 2px;
+    background: gray;
+  }
+}
